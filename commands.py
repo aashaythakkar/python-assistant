@@ -20,10 +20,12 @@ class Commander:
         else:
             f = Fetcher("https://www.google.com/search?q=" + text)
 
+        '''
         if "launch" or "open" in text:
             app = text.split(" ", 1)[-1]
             self.respond("Opening app")
             os.system(app)
+        '''
 
     def respond(self, response):
         print(response)
